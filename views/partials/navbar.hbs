@@ -1,0 +1,11 @@
+<nav>
+    <ul class="container">
+      {{#if isLoggedIn}}
+        <li>Hello {{username}}</li>
+        <li><a href="/">Log out</a></li>
+      {{else}}
+        <li><a href="/">Log in</a></li>
+        <li><a href="/">Sign up</a></li>
+      {{/if}}
+    </ul>
+  </nav>

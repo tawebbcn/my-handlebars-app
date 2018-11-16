@@ -1,0 +1,21 @@
+<section class="container">
+  <h1>Search posts by user</h1>
+  <form method="get" action="/posts/search">
+    <div class="field">
+      <label for="user-id">User id</label>
+      <input id="user-id" type="text" name="userId">
+    </div>
+    <div class="field">
+      <button type="submit">Search</button>
+    </div>
+  </form>
+</section>
+
+<section class="search-results container">
+  <h2>Posts by user: {{userId}}</h2>
+  <ul>
+    {{#each posts}}
+      <li><a href="/posts/{{this.id}}">{{this.title}}</a></li>
+    {{/each}}
+  </ul>
+</section>

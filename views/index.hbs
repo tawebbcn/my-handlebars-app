@@ -1,0 +1,14 @@
+<header class="container" id="site-header">
+  <h1>{{title}}</h1>
+  <p>Welcome to {{title}}</p>
+  <p>{{date}}</p>
+</header>
+
+<section class="container">
+  <h2>People</h2>
+  <ul class="user-list">
+    {{#each people}}
+      {{> usercard}}
+    {{/each}}
+  </ul>
+</section>

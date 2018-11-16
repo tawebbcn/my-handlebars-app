@@ -1,0 +1,25 @@
+<section class="container">
+  <h1>Create post</h1>
+
+  <form method="POST" action="/posts">
+
+    <div class="field">
+      <label>Title</label>
+      <input type="text" name="title" />
+    </div>
+
+    <div class="field">
+      <label>Body</label>
+      <textarea name="body" rows="4"></textarea>
+    </div>
+
+    <div class="field">
+      <label>User id</label>
+      <input type="number" name="userId" />
+    </div>
+
+    <div class="field submit">
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</section>
